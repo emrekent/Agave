@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agave is missing from the answer. A live AEO teardown.</title>
+<meta name="description" content="I asked ChatGPT the eight questions your buyers ask before choosing an AP tool. Agave showed up in one, mislabeled. Here is who is winning those answers and how to take them back.">
+<style>
+  :root{--paper:#faf9f6;--ink:#191817;--muted:#5f5b54;--line:#e5e0d6;--accent:#0f6f5c;--accent-soft:#e4f0ec;--warn:#8a5a12;--warn-soft:#f6eddc;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;font-size:17px}
+  .wrap{max-width:820px;margin:0 auto;padding:60px 24px 90px}
+  .kicker{font-family:ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+  h1{font-size:33px;line-height:1.14;letter-spacing:-.02em;margin:0 0 16px;font-weight:750;max-width:20ch}
+  .lede{font-size:19px;color:var(--muted);margin:0 0 20px;max-width:62ch}
+  .meta{font-size:14px;color:var(--muted);margin:0}
+  .meta b{color:var(--ink)}
+  section{margin:52px 0 0}
+  h2{font-size:13px;font-family:ui-monospace,Menlo,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border-top:1px solid var(--line);padding-top:22px;margin:0 0 8px}
+  h2 + .sub{font-size:16px;color:var(--muted);margin:0 0 22px;max-width:60ch}
+  h3{font-size:21px;letter-spacing:-.01em;margin:26px 0 8px}
+  p{margin:0 0 15px}
+  strong{font-weight:650}
+  table{border-collapse:collapse;width:100%;font-size:14px;margin:0 0 10px}
+  th,td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line)}
+  th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
+  td.no{color:var(--warn);font-weight:650;white-space:nowrap}
+  td.part{color:var(--accent);font-weight:650;white-space:nowrap}
+  .big{display:flex;gap:26px;flex-wrap:wrap;margin:6px 0 4px}
+  .stat{flex:1;min-width:150px}
+  .stat .n{font-size:40px;font-weight:750;letter-spacing:-.02em;line-height:1}
+  .stat .l{font-size:14px;color:var(--muted);margin-top:6px}
+  .callout{background:var(--accent-soft);border-left:3px solid var(--accent);padding:15px 19px;border-radius:0 8px 8px 0;margin:0 0 20px;font-size:15.5px}
+  .callout.warn{background:var(--warn-soft);border-left-color:var(--warn)}
+  .move{border:1px solid var(--line);background:#fff;border-radius:12px;padding:18px 20px;margin:0 0 14px}
+  .move h3{margin:0 0 6px;font-size:18px}
+  .move p{margin:0;font-size:15px;color:var(--muted)}
+  .move .tag{font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
+  footer{border-top:1px solid var(--line);margin-top:50px;padding-top:22px;font-size:13.5px;color:var(--muted)}
+  footer a{color:var(--accent)}
+  .sig{color:var(--ink);font-weight:650}
+  @media(max-width:620px){.wrap{padding:42px 18px 68px}h1{font-size:27px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="kicker">AEO teardown / live test</p>
+  <h1>Your buyers ask AI which AP tool to use. Agave is not in the answer.</h1>
+  <p class="lede">I asked ChatGPT the eight questions a construction finance buyer asks before choosing AP automation. Agave led zero of them. It surfaced once, filed under the wrong category. Here is who took those answers, and the three moves to take them back.</p>
+  <p class="meta"><b>By Emre Kent</b> &middot; 16 September 2026 &middot; Public test, my own queries in ChatGPT with browsing. Assistants vary by day and phrasing; treat every finding as a hypothesis.</p>
+
+  <section>
+    <h2>01 / The result</h2>
+    <div class="big">
+      <div class="stat"><div class="n">0 / 8</div><div class="l">questions where Agave was recommended on its own</div></div>
+      <div class="stat"><div class="n">1</div><div class="l">appearance, and it called Agave "an API layer, not the AP application"</div></div>
+      <div class="stat"><div class="n">4</div><div class="l">competitors winning the citations: hh2, Vergo, Stampli, AvidXchange</div></div>
+    </div>
+    <div class="callout">
+      <p>The tell: on "AvidXchange alternatives for construction AP", ChatGPT listed six tools and left Agave out. When I asked "what about Agave?", it answered: <strong>"Agave absolutely belongs on the shortlist. I should have included it."</strong> The product qualifies. The content that teaches the model to say so is missing.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>02 / The eight questions, and who won them</h2>
+    <table>
+      <thead><tr><th>Buyer question</th><th>Agave?</th><th>Who the answer named, and the sources it cited</th></tr></thead>
+      <tbody>
+        <tr><td>Automate AP on Sage 300 CRE</td><td class="no">No</td><td>A build-it-yourself answer (Sage native import, ODBC, n8n). No vendor. Sources: Sage KB</td></tr>
+        <tr><td>Best AP automation for Procore</td><td class="no">No</td><td>AvidXchange, Procore native, Stampli. Sources: avidxchange.com, procore.com, stampli.com</td></tr>
+        <tr><td>Sync Procore with Sage 300 CRE</td><td class="no">No</td><td>Procore's native hh2 connector. Sources: procore.com support</td></tr>
+        <tr><td>Best AP for Viewpoint Vista</td><td class="no">No</td><td>Stampli, AvidXchange, Vergo, Trimble native. Sources: stampli.com, avidxchange.com, trimble</td></tr>
+        <tr><td>Automate invoice coding and approvals</td><td class="no">No</td><td>Sage Paperless, Vergo, Procore, Datagrid. Sources: sage.com, getvergo.com, datagrid.com</td></tr>
+        <tr><td>Software connecting Foundation, Sage, Viewpoint for AP</td><td class="part">Once</td><td>hh2, Vergo, AvidXchange. Agave named, but as "API middleware, not the AP app". Sources: hh2.com, getvergo.com, autodesk.com</td></tr>
+        <tr><td>AvidXchange alternatives for construction AP</td><td class="no">No*</td><td>hh2, Stampli, Vergo, Corpay, BILL, Tipalti. *Validated only after I named Agave. Sources: autopayables.com, corpay.com, cashflowpick.com</td></tr>
+        <tr><td>Reduce manual invoice entry in construction accounting</td><td class="no">No</td><td>Trimble Viewpoint, Procore. Sources: viewpoint.com, procore.com</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>03 / Why the competitors win these answers</h2>
+    <p>The models are not guessing. They quote specific pages, and the winners own three page types Agave is thin on:</p>
+    <p><strong>1. One page per ERP.</strong> ChatGPT cited <em>stampli.com/erp/vista</em> and <em>avidxchange.com/integrations/procore</em> almost verbatim. Agave has a single combined integrations page, so it does not surface for "AP automation for Viewpoint Vista" the way a dedicated page does.</p>
+    <p><strong>2. Comparison and alternatives pages.</strong> On the alternatives question the model cited <em>corpay.com</em> and <em>autopayables.com</em> listicles. Agave has no "Agave vs" or "AvidXchange alternatives" content, so it is absent from the exact query where a buyer is switching.</p>
+    <p><strong>3. A clear category label.</strong> The one time Agave appeared, it was filed as middleware, not AP. Agave now sells AP automation, but the model has not learned that, because the citable content still reads as an integrations API.</p>
+  </section>
+
+  <section>
+    <h2>04 / Three moves to take the answers back</h2>
+    <div class="move"><span class="tag">Move 1</span><h3>Ship one answer page per ERP</h3><p>A dedicated, directly-answerable page for AP automation on each ERP the buyer named: Sage 300 CRE, Viewpoint Vista, Foundation, Spectrum. Lead each with the plain-language answer the model wants to quote (what it does, job-cost coding, approvals, ERP write-back, payments), the way Stampli's ERP pages are built. This is the cheapest citation to win because the query is exact and the intent is high.</p></div>
+    <div class="move"><span class="tag">Move 2</span><h3>Own the comparison and alternatives content</h3><p>"Agave vs AvidXchange", "vs Stampli", "vs hh2", "vs Vergo", and an "AvidXchange alternatives for construction" page. This is the query where the model already admits Agave belongs once named. Publishing the page is how it gets named without being asked.</p></div>
+    <div class="move"><span class="tag">Move 3</span><h3>Get into the roundups, and fix the label</h3><p>The models trust third-party lists like autopayables.com and cashflowpick.com's "best construction AP 2026". Agave should be in them, positioned clearly as a construction AP automation platform, not an integrations API. That is outreach plus one sentence of positioning discipline repeated everywhere.</p></div>
+  </section>
+
+  <section>
+    <h2>05 / How I would measure it</h2>
+    <p>Re-run this exact set monthly across ChatGPT, Claude, Gemini and Perplexity. Track, per question: does Agave appear, in what position, with which cited source, and against whom. The number to move is simple: appearances in the answer, up from roughly one in eight today. It is a channel the posting says nobody at Agave has worked yet, which is exactly why it is winnable.</p>
+    <div class="callout warn">
+      <p>Honesty boundaries: this is my own test in ChatGPT with browsing on one day. Answers shift with model, date and wording. Every recommendation is a hypothesis from public pages, with no access to Agave's analytics, roadmap or conversion data. The competitor names and citations are reproduced only as the assistants returned them.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Built from public AI-assistant answers to show approach, not from any Agave data I have not seen.</p>
+    <p class="sig">Emre Kent &middot; <a href="https://emrekent.com">emrekent.com</a> &middot; <a href="https://www.linkedin.com/in/emrekent/">linkedin.com/in/emrekent</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
